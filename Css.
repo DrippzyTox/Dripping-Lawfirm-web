@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.textTitle {
+  font-family: "Bookman Old Style";
+  font-weight: "bold";
+  color: green;
+  /* color:  red; */
+}
+.textBody 
+{
+  font-family: "Bookman Old Style";
+  font-weight: "normal";
+  color: #01b201;
+  
+}
+.textLight
+{
+  font-family: "Bookman Old Style";
+  font-weight: "light"; 
+  color: #84d784;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #06090C;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #666;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #555;
+}
+.tab button:focus
+{
+  background-color: #FFA62B;
+}
+
+/*
+.container
+{
+   input {
+      /display: none;
+      &:checked + label {
+        background: #eee;
+      }
+      /* @for $i from 1 through 4 {
+        &#tab#{$i}:checked {
+          ~ .line {
+            left: #{($i - 1) * 25%
+          };
+          }
+          ~ .content-container #c#{$i} {
+            opacity: 1;
+          }
+        } */
+ 
+
+
+   .line {
+    position: absolute;
+      background: #FFA62B;
+      height: 2px;
+      width: 25%;
+      top: 34px;
+      left: 0;
+      /* height: 2px;
+      width: 13px;
+      top: 43px; */
+      transition: 0.15s ease;  
+    }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*
+   .line {
+    position: relative;
+      background: #FFA62B;
+     padding: 1px;
+     top: 43px;
+     width: 65px;
+      /* height: 2px;
+      width: 13px;
+      top: 43px; 
+      transition: 0.25s ease;
+    } */
